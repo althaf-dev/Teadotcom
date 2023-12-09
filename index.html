@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEA.COM</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="./public/Styles/index.css">
+    <link rel="icon" href="https://www.uaetea.com/wp-content/uploads/2022/07/cropped-IMG_4147-32x32.png"
+        sizes="32x32" />
+    <script src="./public/JavaScripts/jquery.js"></script>
+    <script src="https://kit.fontawesome.com/7d74ce6fe0.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <!-- Modal Starts-->
+    <div class="modal-wrapper  bg-danger ">
+
+        <div class="modal    fade" id="exampleModal" tabindex="-1"
+            aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered  modal-fullscreen-lg-down">
+                <div class="modal-content">
+
+                    <div class="row">
+                        <div class="col d-flex justify-content-end">
+                            <button type="button" class="btn-close m-1 btn btn-danger"  
+                                data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                    </div>
+
+                    <div class="modal-body">
+                        <div class="bg-danger mt-1 p-0 loginbox">
+                            <form class="form-control was-validated">
+                                <input class="mt-4 form-control " type="text"
+                                    minlength="10" required placeholder="mob or email">
+                                <input class="mt-4 form-control" type="password"
+                                    minlength="8" placeholder="password" required
+                                    aria-labelledby="passwordhelper">
+                                <div id="passwordhelper" class="form-text mb-2">
+                                    Your password must be 8-20 characters long, contain
+                                    letters and numbers,
+                                    and must not contain spaces, special characters, or
+                                    emoji.
+                                </div>
+                                <a href="" class="mt-2 my-3"><small
+                                        class="offset-7">forget password?</small></a>
+                                <button type="button"
+                                    class="form-control mt-2 btn btn-success opacity-50 text-white rounded-0">LOGIN</button>
+                                <p class="mt-4">By logging in, you agree to<a
+                                        href="">Terms & Conditions</a>
+                                    and<a href=" ">Privacy Policy</a> of moneycontrol
+                                </p>
+                                <p class="mt-4">
+                                    Don’t have an account? <a href=""><strong>Sign
+                                            Up</strong></a>
+                                </p>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal ends-->
+
+    <header class="h-25 m-0 p-0  bgcolor headerstickey">
+        <!-- Nav bar -->
+        <nav class="navbar navbar-expand-lg  d-flex justify-content-evenly align-items-start h-75 align-items-center">
+            <a class="navbar-brand  fw-bold fs-1 p-2 " href="" ;>TEA.COM</a>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav"><span
+                    class="navbar-toggler-icon "></span></button>
+            <div class="collapse navbar-collapse p-2 flex-grow-0" id="nav">
+
+                <ul class="navbar-nav ms-lg-5 navbarc nav-pills nav-fill me-5 fw-bold fs-6">
+                    <li class="nav-item"><a class=" nav-link active fw-bold  ms-lg-5 gold " href="">Home</a></li>
+                    <li class="nav-item"><a class="nav-link  ms-lg-5 navbarf" href="./about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link  ms-lg-5 navbarf" href="./menu.html">Menu</a></li>
+                    <li class="nav-item dropdown"><a id="dl" class="nav-link  ms-lg-5 fw-bold dropdown-toggle gold"
+                            data-bs-toggle="dropdown" href="">Locations</a>
+
+                        <ul class="dropdown-menu dropdown-center dropdown-menu-end" aria-labelledby="dl">
+                            <li><a class="dropdown-item d-flex justify-content-center" href="">Sharja</a></li>
+                            <li><a class="dropdown-item d-flex justify-content-center" href="">Dubai</a></li>
+                            <li><a class="dropdown-item d-flex justify-content-center" href="">Ajman</a></li>
+
+                        </ul>
+
+                    </li>
+                    <li class="nav-item"><a class="nav-link  ms-lg-5 navbarf" href="./contact.html">Contact</a></li>
+                    <li class="nav-item"><span id="login" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                            class=" curser nav-link  ms-lg-5 me-lg-5 navbarf" href="">Login</span></li>
+                </ul>
+            </div>
+
+            <div class="navbar-brand     d-flex justify-content-center fw-bold fs-4 ps-4  ms-5 d-lg-grid d-none container">
+                <div class="row">
+                    <div class="col-6  mt-3 p-0  d-flex justify-content-end">
+                        <i class="fa-solid fa-truck fs-1 text-success justify-content-center p-0"></i>
+                    </div>
+                    <div class="col-6">
+                        <div class="row">
+                            <div class="col-12 fs-6">Call and order in</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">+97456893</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </nav>
+    </header>
+
+
+
+
+   
+
+
+
+
+
+
+
+
+    <main class="p-0 m-0  mt-0">
+
+
+
+        <!-- Showcase -->
+        <section class="bg-primary h-50">
+            <div class="container-fluid bg-dark h-100">
+                <div class="row">
+
+                    <div class="col-lg-8 col-12">
+                        <h2 id="textanim" class="text-white ms-2 d-flex justify-content-center textanim">Hungry!</h2>
+                        <img src="./public/Images/content-pixie-m-gqDRzbJLQ-unsplash.jpg" class=" img-fluid p-0 ms-lg-2 rounded"
+                            width="1200px"  height="450px" alt="hero">
+                    </div>
+                    <div class="col-lg-4 col-12 d-flex flex-column justify-content-center hero">
+                        <div class="row">
+                            <div class="col mt-lg-5 mt-2">
+                                <div class="text-white d-flex justify-content-center fs-4"><small><i>your
+                                            day</i></small></div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col mt-lg-5 mt-2">
+                                <div class="d-flex justify-content-center fs-1 gold">
+                                    <h1>BEGINS HERE</h1>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col mt-lg-5 mt-2">
+                                <div class="text-white d-flex justify-content-center">
+                                    <p class="justify-content-center fontsize"><i> Our karak tea is very famous for its
+                                            taste
+                                            and flavour and we also providing a
+                                            variety of teas and coffees along with a number of snack items including
+                                            shawarma, sandwiches Grill .</i>
+
+
+                                    </p>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <section class=" mt-2 bg-dark">
+            <div class="container-fluid  h-100">
+                <div class="row h-100">
+                    <div class="col-lg-4 col-12  h-100">
+                        <div class="d-flex flex-column justify-content-center align-items-center">
+                            <img class="img-fluid menu" src="./public/Images/buger500x624.jpg" alt="burger" width="440px"
+                                height="560px">
+                            <button class="btn btn-success m-1">ordernow</button>
+
+                        </div>
+
+                    </div>
+                    <div class="col-lg-8 col-12 h-100">
+                        <div class="row  h-100">
+                            <div class="col-lg-6 col-12 h-100 ">
+                                <div class="row h-50">
+
+                                    <div class="col-12">
+                                        <div class="d-flex flex-column justify-content-center align-items-center">
+                                            <img class="img-fluid menu" src="./public/Images/grill540x300.jpg" alt="gril"
+                                                width="460px" height="300px">
+                                            <button class="btn btn-success m-1">ordernow</button>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div
+                                            class="d-flex flex-column justify-content-center align-items-center mt-lg-2">
+                                            <img class="img-fluid menu" src="./public/Images/broasted540x300.jpg" alt="broasted"
+                                                width="460px" height="240px">
+                                            <button class="btn btn-success m-1">ordernow</button>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="col-lg-6">
+                                <div class="d-flex flex-column justify-content-center align-items-center">
+                                    <img class="img-fluid menu" src="./public/Images/drinks500x624.jpg" alt="drinks" width="360px"
+                                        height="400px">
+                                    <button class="btn btn-success m-1">ordernow</button>
+
+                                </div>
+
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mt-2 p-2 box">
+            <div class="container-fluid bg-dark h-100">
+                <div class="row">
+
+                    <div class="col-lg-4 col-12">
+                        <div class="gold_border card m-lg-4 mt-3">
+                            <div class="row">
+                                <div class="col-lg-4 col-12">
+                                    <div class="d-flex h-100 justify-content-center align-items-center p-2">
+                                        <i class="fa-solid fa-truck display-4 text-success"></i>
+                                    </div>
+
+                                </div>
+                                <div class="col-lg-8 col-12">
+                                    <div class="card-body">
+                                        <div class="card-title">
+                                            <p><strong>Free Home Delivery</strong></p>
+                                        </div>
+                                        <span class="card-text">Order food, and get it delivered straight to your home
+                                            or office.</span>
+                                    </div>
+
+
+
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+
+
+
+
+                    <div class="col-lg-4 col-12">
+                        <div class="gold_border card m-lg-4 mt-3">
+                            <div class="row">
+                                <div class="col-lg-4 col-12">
+                                    <div class="d-flex h-100 justify-content-center align-items-center p-2">
+                                        <i class="fa-regular fa-clock display-4 text-danger"></i></i>
+                                    </div>
+
+                                </div>
+                                <div class="col-lg-8 col-12">
+                                    <div class="card-body">
+                                        <div class="card-title">
+                                            <p><strong>30 Minutes Delivery</strong></p>
+                                        </div>
+                                        <span class="card-text">Everything you order will be quickly delivered to your
+                                            door.</span>
+                                    </div>
+
+
+
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="col-lg-4 col-12">
+                        <div class="gold_border card m-lg-4 mt-3 mb-3">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <div class="d-flex h-100 justify-content-center align-items-center p-2">
+                                        <i class="fa-solid fa-burger display-4 text-primary"></i>
+                                    </div>
+
+                                </div>
+                                <div class="col-lg-8 col-12">
+                                    <div class="card-body">
+                                        <div class="card-title">
+                                            <p><strong>Best Quality Guarantee</strong></p>
+                                        </div>
+                                        <span class="card-text">Tea.com is an chain of family restaurants..</span>
+                                    </div>
+
+
+
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <section class="mt-2 box">
+            <div class="container">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-lg-6 col-12">
+                        <h2 class="mt-4 ms-5 mb-4 gold">Experience the Best Cafeteria in UAE</h2>
+                        <p class="text-justify">
+                            Refresh your day with a coffee or tea, might be one of your choices for sure. We are here in
+                            UAE to bring a refresher for you with our amazing and delicious foods and drinks. Experience
+                            the Best Cafeteria in Dubai that find a real refresher. Spend your weekend or the day
+                            beginning with a cup of coffee, snacks, and breakfast. Make your meeting in a space that
+                            finds the best choice with delicious pastries, burgers, Grill, sandwiches, and more freshly
+                            prepared. <a class="gold">Tea.com Cafeteria</a> is your choice for anything in UAE that
+                            feels 100% comfortable.
+                        </p>
+                        <p class="text-justify">
+                            Welcome to our Tea.com restaurant and popular Cafeteria in Dubai <a class="gold">Sharjah</a>
+                            , where you can
+                            experience culinary masterpieces. Indulge in Tea.com Cafeteria signature dishes or try
+                            something unique with our weekly specials. Our cafeteria in Dubai and currently open
+                            inviting dining room and also take it to-go. You might be craving, well, we have something
+                            to satisfy your appetite that for sure you will rate 5/5.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+
+
+
+        <section class="reviewbg mt-4 box">
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-12 d-flex justify-content-center">
+                        <h3>Our valued customer review</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-12">
+
+                        <div class="card mb-2">
+                            <div class="card-body">
+                                <div class="card-title">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="row  d-flex justify-content-evenly p-2">
+                                                <div class="col-2 me-4">
+                                                    <img src="./public/Images/user1.png" alt="user">
+
+                                                </div>
+                                                <div class="col-4 ms-2">
+                                                    <div class="row">
+                                                        <div class="col">
+                                                            <h5>
+                                                                ARUN KRISHNAN
+                                                            </h5>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col">
+                                                            <small>
+                                                                Local Guide
+                                                            </small>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                                <div class="col-4">
+                                                    <div class="d-flex">
+                                                        <i class="fa-solid fa-star gold"></i>
+                                                        <i class="fa-solid fa-star gold"></i>
+                                                        <i class="fa-solid fa-star gold"></i>
+                                                        <i class="fa-solid fa-star gold"></i>
+                                                        <i class="fa-solid fa-star gold"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card-text">
+
+                                    <p class="text-justify">
+                                        I'll give them five star. Bcoz nice snacks with maintaining good quality and
+                                        quantity. Wide variety of snacks juice and mocktails. Really nice refreshing
+                                        drinks they have . Once you go there it will be one of your best spot.
+                                    </p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="col-lg-4 col-12">
+
+                        <div class="card mb-2">
+                            <div class="card-body">
+                                <div class="card-title">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="row  d-flex justify-content-evenly p-2">
+                                                <div class="col-2 m2-4">
+                                                    <img src="./public/Images/user2.png" alt="user">
+
+                                                </div>
+                                                <div class="col-4 ms-4">
+                                                    <div class="row">
+                                                        <div class="col">
+                                                            <h5>
+
+                                                                ROHAIL AWAN
+                                                            </h5>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col">
+                                                            <small>
+                                                                Local Guide
+                                                            </small>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                                <div class="col-4">
+                                                    <div class="d-flex">
+                                                        <i class="fa-solid fa-star gold"></i>
+                                                        <i class="fa-solid fa-star gold"></i>
+                                                        <i class="fa-solid fa-star gold"></i>
+                                                        <i class="fa-solid fa-star gold"></i>
+                                                        <i class="fa-solid fa-star gold"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card-text">
+
+                                    <p class="text-justify">
+                                        I'll give them five star. Bcoz nice snacks with maintaining good quality and
+                                        quantity. Wide variety of snacks juice and mocktails. Really nice refreshing
+                                        drinks they have . Once you go there it will be one of your best spot.
+                                    </p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="col-lg-4 col-12">
+
+                        <div class="card mb-2">
+                            <div class="card-body">
+                                <div class="card-title">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="row  d-flex justify-content-evenly p-2">
+                                                <div class="col-2 me-4">
+                                                    <img src="./public/Images/user3.png" alt="user">
+
+                                                </div>
+                                                <div class="col-4 ms-4">
+                                                    <div class="row">
+                                                        <div class="col">
+                                                            <h5>
+                                                                REE REEM
+                                                            </h5>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col">
+                                                            <small>
+                                                                Local Guide
+                                                            </small>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                                <div class="col-4">
+                                                    <div class="d-flex">
+                                                        <i class="fa-solid fa-star gold"></i>
+                                                        <i class="fa-solid fa-star gold"></i>
+                                                        <i class="fa-solid fa-star gold"></i>
+                                                        <i class="fa-solid fa-star gold"></i>
+                                                        <i class="fa-solid fa-star gold"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card-text">
+
+                                    <p class="text-justify">
+                                        Tasty food dynamite shrimps are too good, nice sandwiches even fries also taste
+                                        good
+                                    </p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+
+        </section>
+
+        <section class="sec5 container-fluid text-center d-flex align-items-center justify-content-center">
+            <div class="row justify-content-center align-items-end">
+                <div class="col-12">
+                    <p class="gold font1 fs-3">We guarantee</p>
+                    <h1 class="fw-bolder display-3">30 Minutes Delivery!</h1>
+                  
+                </div>
+                <div class="col-4">
+                    <p class="text-center fw-bold">If you’re having a meeting, working late at night and need an extra push. Let us know and we will be
+                        there</p>
+                    <button class="btn-gold ps-4 pe-4 pt-3 pb-3" type="button">ORDER NOW</button>
+                </div>
+    
+            </div>
+    
+        </section>
+    </main>
+    <footer class="container-fluid">
+
+        <div class="row text bg-footer text-white justify-content-center pb-5 pt-5">
+
+            <div class="col-2 text-center "><img src="https://www.uaetea.com/wp-content/uploads/2022/07/cropped-IMG_4147.png" width="150px" height="150px"  alt="logo"></div>
+            
+        </div>
+
+        <div class="row justify-content-evenly bg-footer text-white pb-5">
+            
+            <div class="col-3  d-flex flex-column text-center">
+
+                <h5 class="mb-3 fw-bold">ADDRESS</h5>
+                <p class="mb-0">Tea.com Cafeteria & Restaurants</p>
+                <p>Dubai – Sharjah – Ajman – Rolla – Muweilah</p>
+            </div>
+            <div class="col-3  d-flex flex-column text-center">
+
+                    <h5 class="mb-3 fw-bold">CONTACT US</h5>
+                    <p class="mb-1">Your day begins here</p>
+                    <div>
+                        <h6 class="fw-bold mb-0 gold">+971 65 65 65 86</h6>
+                        <h6 class="fw-bold mb-0 gold">+971 54 53 66 400</h6>
+                        <h6 class="fw-bold gold">+971 54 53 66 400</h6>
+                    </div>
+            </div>
+            <div class="col-3  d-flex flex-column">
+
+                <div class="row fs-3 d-flex justify-content-center mb-3">
+                    <div class="col-1 me-2"> <i class="fab fa-facebook"></i></div>
+                    <div class="col-1 me-2"> <i class="fab fa-instagram"></i></div>
+                    <div class="col-1"><i class="fab fa-whatsapp"></i></div>
+                </div>
+                <div class="row text-center"><p>follow us on our social network</p></div>
+                
+
+            </div>
+        </div>
+
+        <div class="row justify-content-around pb-4 pt-3">
+
+            <div class="col-4 ms-5">
+                <strong>Copyright © 2023 uaetea.com All Rights Reserved.</strong>
+                
+            </div>
+            <div class="col-6 d-flex justify-content-end">
+
+                    <img src="https://www.uaetea.com/wp-content/uploads/2020/09/deliver.png" width="195" height="25" alt="talabat">
+            </div>
+        </div>
+
+    </footer>
+
+    <script src="./public/JavaScripts/index.js"></script>
+</body>
+
+</html>

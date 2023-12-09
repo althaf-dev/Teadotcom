@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+
+*{
+    margin:0;
+    padding: 0;
+}
+#modal1{
+    display: none;
+    width:100vw;
+    height: 100vh;
+    position: fixed;
+    top:0px;
+    z-index: 2;
+    background-color: hsla(0, 0%, 0%, 0.9);
+    
+  
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+header  a:hover{
+    color:orange !important;
+    
+}
+header li{
+    text-decoration: none;
+}
+.curser{
+    cursor:pointer;
+}
+.gold {
+    color: gold;
+    text-decoration: none;
+}
+.text-justify{
+    text-align: justify;
+}
+.bgcolor {
+    background-color: hsla(30, 17%, 91%, 0.971);
+}
+.fontsize{
+    font-size: 2.5vw;
+    letter-spacing: 1px;
+    line-height: 1.5;
+}
+.navbarc{
+    background-color: hsla(0, 5%, 4%, 0.699);;
+}
+.navbarf{
+    color:#fff;
+}
+
+.headerstickey{
+    position: sticky;
+    top:0px;
+    z-index: 1;
+}
+.footer{
+    background-color: rgba(243, 243, 245, 0.925);
+    /* position:sticky;
+    bottom: 0px; */
+}
+main section:hover .hero{
+
+    transition: all 0.5s;
+    animation: showhero 2s ease-in-out 0.2s 2 forwards;
+
+}
+.menu:hover{
+    transition: all 0.5s;
+    animation: showmenu 3s ease-in-out 0.2s forwards;
+}
+.gold_border{
+    border:4px dashed gold;
+}
+.reviewbg{
+    background-color:hsla(32, 100%, 88%, 0.359);
+}
+.box{
+    transform: translateX(4000px);
+}
+.show{
+    transition: all 0.8s;
+    transform: translateX(0px);
+}
+.textanim{
+   
+    transition: all 0.5s;
+    animation: showmenu 0.5s ease-in-out 0.1s forwards;
+    
+}
+#textanim{
+    
+    letter-spacing: 4px;
+}
+.menucat_pizza{
+    background-image: url("./menucat-pizza.webp");
+}
+.veg{
+    border:1px solid green;
+    
+}
+.cartsummary{
+    position: sticky;
+    bottom:8px;
+    z-index: 1;
+}
+.bg-lightgreen{
+
+    background-color: hsla(120, 100%, 25%, 0.682);
+}
+.box-shadow{
+    box-shadow: 2px 2px 12px 0.1px rgba(245, 245, 245, 0.71);
+}
+.about_header{
+
+    margin-top: 1.5rem;
+    height: 8rem;
+    display: grid;
+    place-content: center;
+    color: #FFC222;
+    background-image: url("https://www.uaetea.com/wp-content/uploads/2023/03/breadcrumb1.jpg");
+}
+.about_header h1{
+    font-weight: bolder;
+}
+
+.sec3
+{
+    background-image: url("https://www.uaetea.com/wp-content/uploads/2022/07/Tea-BAnner.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height:40rem;
+    margin-top: 2rem;
+}
+.sec4{
+
+    margin-top: 8rem;
+    margin-bottom: 8rem;
+}
+.sec5
+{
+    background-image:url("https://www.uaetea.com/wp-content/uploads/2020/09/bg3-h3-3.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height:30rem;
+    margin-top: 2rem;
+}
+.content{
+    font-weight:bold;
+}
+.bg-footer{
+    background-color: #181818;
+    background-image: url("https://www.uaetea.com/wp-content/uploads/2020/09/shape_dot.png");
+}
+.btn-gold{
+
+    background-color: rgba(218, 165, 32, 0.836);
+    color: #181818;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    padding: .6em;
+}
+.btn-gold:hover{
+    
+    background-color: rgb(218, 164, 27);
+    color: whitesmoke;
+}
+.font1{
+
+    font-family: "Norican", Sans-serif;
+}
+.img-move-effect:hover{
+
+       transition: all 1s;
+       transform: translateY(-3%);
+}
+.img-move-effect:not( :hover){
+
+    transition: all 1s;
+    transform: translateY(2%);
+}
+.bg-gold{
+    background-color: #FFC222;
+}
+.border-gold{
+    border: 2px solid #FFC222;
+}
+@keyframes showhero {
+
+    0%{
+        transform: skew(0deg);
+    }
+    40%{
+        transform: skew(10deg);
+
+    }
+    80%{
+        transform: skew(-10deg);
+    }
+    100%{
+        transform: skew(0deg);
+    }
+}
+
+@keyframes showmenu {
+    0%{
+        transform: scale(1)
+    }
+   
+    80%{
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale(1)
+    }
+    
+}
+@media screen and (min-width:676px) {
+    .fontsize{
+    font-size: 1vw;
+    letter-spacing: 1px;
+    line-height: 1.5;
+}
+.navbarc{
+    background-color: hsla(30, 17%, 91%, 0.536);
+}
+.navbarf{
+    color: black;
+}
+
+.carousel-inner{
+
+    display: flex;
+}
+.carousel-item{
+    display: block ;
+    margin-right: 0;
+    flex:0 0 calc(100%/4);
+}
+
+}

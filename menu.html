@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="./public/Styles/index.css">
+    <script src="./public/JavaScripts/jquery.js"></script>
+    <script src="https://kit.fontawesome.com/7d74ce6fe0.js" crossorigin="anonymous"></script>
+
+</head>
+
+
+<body>
+
+
+
+    <!-- Modal -->
+
+
+
+    <div class="modal-wrapper  bg-danger ">
+
+
+        <div class="modal    fade" id="exampleModal" tabindex="-1"
+            aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+
+
+
+            <div class="modal-dialog modal-dialog-centered  modal-fullscreen-lg-down">
+                <div class="modal-content">
+
+                    <div class="row">
+                        <div class="col d-flex justify-content-end">
+                            <button type="button" class="btn-close m-1 btn btn-danger"  
+                                data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                    </div>
+
+                    <div class="modal-body">
+
+
+                        <div class="bg-danger mt-1 p-0 loginbox">
+
+                            <form class="form-control was-validated">
+                                <input class="mt-4 form-control " type="text"
+                                    minlength="10" required placeholder="mob or email">
+                                <input class="mt-4 form-control" type="password"
+                                    minlength="8" placeholder="password" required
+                                    aria-labelledby="passwordhelper">
+                                <div id="passwordhelper" class="form-text mb-2">
+                                    Your password must be 8-20 characters long, contain
+                                    letters and numbers,
+                                    and must not contain spaces, special characters, or
+                                    emoji.
+                                </div>
+                                <a href="" class="mt-2 my-3"><small
+                                        class="offset-7">forget password?</small></a>
+                                <button type="button"
+                                    class="form-control mt-2 btn btn-success opacity-50 text-white rounded-0">LOGIN</button>
+                                <p class="mt-4">By logging in, you agree to<a
+                                        href="">Terms & Conditions</a>
+                                    and<a href=" ">Privacy Policy</a> of moneycontrol
+                                </p>
+                                <p class="mt-4">
+                                    Don’t have an account? <a href=""><strong>Sign
+                                            Up</strong></a>
+                                </p>
+
+                            </form>
+                        </div>
+                        
+
+                    </div>
+
+                </div>
+            </div>
+
+
+           
+        </div>
+    </div>
+
+    <!-- Header section -->
+
+    <header class="h-25 m-0 p-0  bgcolor headerstickey">
+        <!-- Nav bar -->
+        <nav class="navbar navbar-expand-lg  d-flex justify-content-evenly align-items-start h-75 align-items-center">
+            <a class="navbar-brand  fw-bold fs-1 p-2 " href="" ;>TEA.COM</a>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav"><span
+                    class="navbar-toggler-icon "></span></button>
+            <div class="collapse navbar-collapse p-2 flex-grow-0" id="nav">
+
+                <ul class="navbar-nav ms-lg-5 navbarc nav-pills nav-fill me-5 fw-bold fs-6">
+                    <li class="nav-item"><a class="nav-link  fw-bold  ms-lg-5 gold " href="./index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link  ms-lg-5 navbarf" href="">About</a></li>
+                    <li class="nav-item"><a class="nav-link  ms-lg-5 navbarf active" href="./menu.html">Menu</a></li>
+                    <li class="nav-item dropdown"><a id="dl" class="nav-link  ms-lg-5 fw-bold dropdown-toggle gold"
+                            data-bs-toggle="dropdown" href="">Locations</a>
+
+                        <ul class="dropdown-menu dropdown-center dropdown-menu-end" aria-labelledby="dl">
+                            <li><a class="dropdown-item d-flex justify-content-center" href="">Sharja</a></li>
+                            <li><a class="dropdown-item d-flex justify-content-center" href="">Dubai</a></li>
+                            <li><a class="dropdown-item d-flex justify-content-center" href="">Ajman</a></li>
+
+                        </ul>
+
+                    </li>
+                    <li class="nav-item"><a class="nav-link  ms-lg-5 navbarf" href="./checkout.html"><i class=" fs-5 fa-solid fa-shopping-cart"></i>Cart</a></li>
+                    <li class="nav-item"><span id="login" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                            class=" curser nav-link  ms-lg-5 me-lg-5 navbarf" href="">Login</span></li>
+                </ul>
+            </div>
+
+            <div
+                class="navbar-brand     d-flex justify-content-center fw-bold fs-4 ps-4  ms-3 d-lg-grid d-none container">
+                <div class="row">
+                    <div class="col-6  mt-3 p-0  d-flex justify-content-end">
+                        <i class="fa-solid fa-truck fs-1 text-success justify-content-center p-0"></i>
+                    </div>
+                    <div class="col-6">
+                        <div class="row">
+                            <div class="col-12 fs-6">Call and order in</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">+97456893</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </nav>
+
+
+    </header>
+
+
+    <section class="h-50">
+
+        <div id="carouselExample" class="carousel " data-bs-ride="carousel" data-bs-touch="true">
+            <div class="carousel-inner p-4 bg-dark">
+                <div class="carousel-item active">
+                    <img class="img-fluid" src="./public/Images/menucat-pizza.webp" alt="..." width="300px" height="300px">
+
+                </div>
+                <div class="carousel-item">
+                    <img class="img-fluid" src="./public/Images/menucat-chinees.webp" alt="..." width="300px" height="300px">
+
+
+                </div>
+                <div class="carousel-item">
+
+                    <img class="img-fluid" src="./public/Images/menucat-biriyani.webp" alt="..." width="300px" height="300px">
+
+                </div>
+                <div class="carousel-item">
+
+                    <img class="img-fluid" src="./public/Images/menucat-sweet.webp" alt="..." width="300px" height="300px">
+
+                </div>
+                <div class="carousel-item">
+
+                    <img class="img-fluid" src="./public/Images/menucat-dealofday.webp" alt="..." width="300px" height="300px">
+
+                </div>
+                <div class="carousel-item">
+
+                    <img class="img-fluid" src="./public/Images/menucat-fastdelivery.webp" alt="..." width="300px" height="300px">
+
+                </div>
+                <div class="carousel-item">
+
+                    <img class="img-fluid" src="./public/Images/menucat-toprated.webp" alt="..." width="300px" height="300px">
+
+                </div>
+            </div>
+
+            <button class="carousel-control-prev " type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon  bg-danger border border-1 rounded-circle"
+                    aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon bg-danger border border-1 rounded-circle "
+                    aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+
+    </section>
+
+
+<!-- filter section -->
+
+<section>
+    <div class="container-fluid">
+        <div class="row g-2 m-4">
+            <div class="col">
+
+                <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
+                    <label class="form-check-label" for="flexSwitchCheckDefault">Veg Only</label>
+                  </div>
+                  
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+    <section class=" mt-5 mb-5">
+        <div class="container-fluid mb-3">
+
+            <!-- first row -->
+
+            <div class="row">
+
+                <!-- firs column -->
+                <div class="col-lg-6 col-12 nonveg">
+
+                    <div class="card p-1 ">
+                        <div class="row">
+                            <div class="col-4 ">
+
+
+                                <div class="row">
+                                    <div
+                                        class="col-12  d-flex flex-column justify-content-center align-items-center mt-lg-0 mt-5 pb-2 pt-2">
+                                        <img class="img-fluid " src="./public/Images/crispyChikenburger.webp"
+                                            alt="crispyChikenburger">
+                                        <button id="btn1" class="btn btn-white border border-2 text-success fw-bold ps-lg-5 pe-lg-5 mt-2">ADD</button>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <div class="col-8">
+
+                                <div class="card-body">
+                                    <div class="card-title">
+                                        <div class="row">
+                                            <div class="col-2">
+                                                <div class="border border-1 border-danger d-inline me-2">
+                                                    <div
+                                                        class="border border-1 border-danger rounded-circle d-inline bg-danger">
+                                                        <span class="p-2 "></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <strong class="fs-3  fw-bold">Crispy Chiken burger</strong>
+
+                                    </div>
+                                    <div class="card-text">
+                                        <i class="fas fa-rupee-sign"></i>
+                                        <span>99</span>
+                                        <p class="mt-lg-5">Our best-selling burger with crispy chicken patty, onion and
+                                            classic mayo sauce.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- second column -->
+
+                <div class="col-lg-6 col-12">
+
+                    <div class="card p-1">
+                        <div class="row">
+                            <div class="col-4 ">
+
+
+                                <div class="row">
+                                    <div
+                                        class="col-12  d-flex flex-column justify-content-center align-items-center mt-lg-0 mt-5 pb-2 pt-2">
+                                        <img class="img-fluid " src="./public/Images/crispyChikenburger.webp"
+                                            alt="crispyChikenburger">
+                                        <button id ="btn2" class="btn btn-white border border-2 text-success fw-bold ps-lg-5 pe-lg-5 mt-2">ADD</button>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <div class="col-8">
+
+                                <div class="card-body">
+                                    <div class="card-title">
+                                        <div class="row">
+                                            <div class="col-2">
+                                                <div class="border border-1 border-success d-inline me-2">
+                                                    <div
+                                                        class="border border-1 border-success rounded-circle d-inline bg-success">
+                                                        <span class="p-2 "></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <strong class="fs-3  fw-bold">BK Veggie Burger</strong>
+
+                                    </div>
+                                    <div class="card-text">
+                                        <i class="fas fa-rupee-sign"></i>
+                                        <span>120</span>
+                                        <p class="mt-lg-5">Our best-selling burger with crispy chicken patty, onion and
+                                            classic mayo sauce.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- second row-->
+
+            <div class="row">
+
+                <!-- firs column -->
+                <div class="col-lg-6 col-12 ">
+
+                    <div class="card p-1">
+                        <div class="row">
+                            <div class="col-4 ">
+
+
+                                <div class="row">
+                                    <div
+                                        class="col-12  d-flex flex-column justify-content-center align-items-center mt-lg-0 mt-5 pb-2 pt-2">
+                                        <img class="img-fluid " src="./public/Images/crispyChikenburger.webp"
+                                            alt="crispyChikenburger">
+                                        <button class="btn btn-white border border-2 text-success fw-bold ps-lg-5 pe-lg-5 mt-2">ADD</button>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <div class="col-8">
+
+                                <div class="card-body">
+                                    <div class="card-title">
+                                        <div class="row">
+                                            <div class="col-2">
+                                                <div class="border border-1 border-success d-inline me-2">
+                                                    <div
+                                                        class="border border-1 border-success rounded-circle d-inline bg-success">
+                                                        <span class="p-2 "></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <strong class="fs-3  fw-bold">BK Chicken Burger</strong>
+
+                                    </div>
+                                    <div class="card-text">
+                                        <i class="fas fa-rupee-sign"></i>
+                                        <span>150</span>
+                                        <p class="mt-lg-5">Our tribute to chicken American taste. BK chicken patty,
+                                            garden fresh crispy lettuce, juicy tomato (seasonal) & our signature sauce..
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- second column -->
+
+                <div class="col-lg-6 col-12 nonveg">
+
+                    <div class="card p-1">
+                        <div class="row">
+                            <div class="col-4 ">
+
+
+                                <div class="row">
+                                    <div
+                                        class="col-12  d-flex flex-column justify-content-center align-items-center mt-lg-0 mt-5 pb-2 pt-2">
+                                        <img class="img-fluid " src="./public/Images/chicken Whopper.webp" alt="crispyChikenburger">
+                                        <button class="btn btn-white border border-2 text-success fw-bold ps-lg-5 pe-lg-5 mt-2">ADD</button>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <div class="col-8">
+
+                                <div class="card-body">
+                                    <div class="card-title">
+                                        <div class="row">
+                                            <div class="col-2">
+                                                <div class="border border-1 border-danger d-inline me-2">
+                                                    <div
+                                                        class="border border-1 border-danger rounded-circle d-inline bg-danger">
+                                                        <span class="p-2 "></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <strong class="fs-3  fw-bold">Crispy Chiken burger</strong>
+
+                                    </div>
+                                    <div class="card-text">
+                                        <i class="fas fa-rupee-sign"></i>
+                                        <span>200</span>
+                                        <p class="mt-lg-5">Our best-selling burger with crispy chicken patty, onion and
+                                            classic mayo sauce.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- third row -->
+
+            <div class="row">
+
+                <!-- firs column -->
+                <div class="col-lg-6 col-12">
+
+                    <div class="card p-1">
+                        <div class="row">
+                            <div class="col-4 ">
+
+
+                                <div class="row">
+                                    <div
+                                        class="col-12  d-flex flex-column justify-content-center align-items-center mt-lg-0 mt-5 pb-2 pt-2">
+                                        <img class="img-fluid " src="./public/Images/Bk burger.jpg" alt="crispyChikenburger">
+                                        <button class="btn btn-white border border-2 text-success fw-bold ps-lg-5 pe-lg-5 mt-2">ADD</button>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <div class="col-8">
+
+                                <div class="card-body">
+                                    <div class="card-title">
+                                        <div class="row">
+                                            <div class="col-2">
+                                                <div class="border border-1 border-success d-inline me-2">
+                                                    <div
+                                                        class="border border-1 border-success rounded-circle d-inline bg-success">
+                                                        <span class="p-2 "></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <strong class="fs-3  fw-bold">Crispy Chiken burger</strong>
+
+                                    </div>
+                                    <div class="card-text">
+                                        <i class="fas fa-rupee-sign"></i>
+                                        <span>130</span>
+                                        <p class="mt-lg-5">Our best-selling burger with crispy chicken patty, onion and
+                                            classic mayo sauce.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- second column -->
+
+                <div class="col-lg-6 col-12 nonveg">
+
+                    <div class="card p-1">
+                        <div class="row">
+                            <div class="col-4 ">
+
+
+                                <div class="row">
+                                    <div
+                                        class="col-12  d-flex flex-column justify-content-center align-items-center mt-lg-0 mt-5 pb-2 pt-2">
+                                        <img class="img-fluid " src="./public/Images/chicken taco.jpg" alt="crispyChikenburger">
+                                        <button class="btn btn-white border border-2 text-success fw-bold ps-lg-5 pe-lg-5 mt-2">ADD</button>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <div class="col-8">
+
+                                <div class="card-body">
+                                    <div class="card-title">
+                                        <div class="row">
+                                            <div class="col-2">
+                                                <div class="border border-1 border-danger d-inline me-2">
+                                                    <div
+                                                        class="border border-1 border-danger rounded-circle d-inline bg-danger">
+                                                        <span class="p-2 "></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <strong class="fs-3  fw-bold">Crunchy Chicken Taco</strong>
+
+                                    </div>
+                                    <div class="card-text">
+                                        <i class="fas fa-rupee-sign"></i>
+                                        <span>150</span>
+                                        <p class="mt-lg-5">Crunchy Shell with chicken patty, crunchy veggies and spicy sauce.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+        </div>
+
+    </section>
+    <section class="cartsummary text-white fw-bold">
+        <div class="container  mb-5">
+            <div class="row bg-lightgreen border border-1 rounded-2 d-flex justify-content-around align-items-center">
+                <div class="col-3 ">
+
+                    <p class="p-0 m-0"><span id = "item-qty" class="m-2">Qty</span>Items | <span id="cart-price">price</span></p>
+                </div>
+                <div class="col-3 offset-6">
+                   <a  class = "nav-link gold pb-3" href="./checkout.html">VIEW CART <i class=" fa-solid fa-cart-shopping fs-3 mt-2 ms-2"></i> </a> 
+
+                </div>
+                
+            </div>
+        </div>
+      
+    </section>
+    <section>
+        
+    </section>
+    <script src="./public/JavaScripts/menu.js"></script>
+    <script src="./public/JavaScripts/index.js"></script>
+    <script src ="./public/JavaScripts/cart.js"></script>
+</body>
+
+</html>
