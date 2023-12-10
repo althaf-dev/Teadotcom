@@ -68,11 +68,14 @@ main section:hover .hero{
 
 }
 .menu:hover{
-    transition: all 0.5s;
-    animation: showmenu 3s ease-in-out 0.2s forwards;
+    transition: all 0.2s;
+    animation: showmenu 0.2s ease-in-out 0.2s forwards;
 }
 .gold_border{
-    border:4px dashed gold;
+    border:2px dashed grey;
+}
+.gold_border:hover{
+    border:3px dashed gold;
 }
 .reviewbg{
     background-color:hsla(32, 100%, 88%, 0.359);
@@ -190,6 +193,33 @@ main section:hover .hero{
 .border-gold{
     border: 2px solid #FFC222;
 }
+.banner{
+
+ 
+    /* background-image: url("https://www.uaetea.com/wp-content/uploads/2022/07/Banner-Main.jpg"); */
+    background: linear-gradient( rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45) ), url('https://www.uaetea.com/wp-content/uploads/2022/07/Banner-Main.jpg');
+    background-position:cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vw;
+}
+.font-responsive{
+
+    font-weight: bolder;
+    color: whitesmoke;
+    font-size: 1.0rem !important;
+}
+/* .merge{
+
+    transform: translateY(-14%);
+    
+} */
+.merge button{
+    transform: translateY(-200%);
+}
+/* .translate-30{
+    transform: translateY(-60%);
+} */
 @keyframes showhero {
 
     0%{
@@ -209,30 +239,52 @@ main section:hover .hero{
 
 @keyframes showmenu {
     0%{
-        transform: scale(1)
+        transform: scale(1.0)
     }
-   
+    20%{
+        transform: scale(1.04)
+    }
+    40%{
+        transform: scale(1.08)
+    }
+    60%{
+        transform: scale(1.1)
+    }
     80%{
-        transform: scale(1.2);
+        transform: scale(1.1);
     }
     100%{
-        transform: scale(1)
+        transform: scale(1.1)
     }
     
 }
-@media screen and (min-width:676px) {
+@media screen and (min-width:769px) {
     .fontsize{
-    font-size: 1vw;
+    font-size: 1.5vw;
     letter-spacing: 1px;
-    line-height: 1.5;
+    line-height: 1.5;  
 }
+
 .navbarc{
     background-color: hsla(30, 17%, 91%, 0.536);
 }
 .navbarf{
     color: black;
 }
+.banner{
 
+ 
+     background-image: url("https://www.uaetea.com/wp-content/uploads/2022/07/Banner-Main.jpg");
+   /* background-position:cover;
+    background-repeat: no-repeat;
+    background-size: cover; */
+    height: 40vw;
+}
+/* .merge{
+
+    transform: translateY(-30%);
+    
+} */
 .carousel-inner{
 
     display: flex;
@@ -242,5 +294,10 @@ main section:hover .hero{
     margin-right: 0;
     flex:0 0 calc(100%/4);
 }
+.font-responsive{
 
+    font-weight: 400;
+    
+    
+}
 }
