@@ -23,6 +23,59 @@
 <body>
 
 
+     <!-- Modal Starts-->
+    <div class="modal-wrapper  bg-danger ">
+
+        <div class="modal    fade" id="exampleModal" tabindex="-1"
+            aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered  modal-fullscreen-lg-down">
+                <div class="modal-content">
+
+                    <div class="row">
+                        <div class="col d-flex justify-content-end">
+                            <button type="button" class="btn-close m-1 btn btn-danger"  
+                                data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                    </div>
+
+                    <div class="modal-body">
+                        <div class="bg-danger mt-1 p-0 loginbox">
+                            <form class="form-control was-validated">
+                                <input class="mt-4 form-control " type="text"
+                                    minlength="10" required placeholder="mob or email">
+                                <input class="mt-4 form-control" type="password"
+                                    minlength="8" placeholder="password" required
+                                    aria-labelledby="passwordhelper">
+                                <div id="passwordhelper" class="form-text mb-2">
+                                    Your password must be 8-20 characters long, contain
+                                    letters and numbers,
+                                    and must not contain spaces, special characters, or
+                                    emoji.
+                                </div>
+                                <a href="" class="mt-2 my-3"><small
+                                        class="offset-7">forget password?</small></a>
+                                <button type="button"
+                                    class="form-control mt-2 btn btn-success opacity-50 text-white rounded-0">LOGIN</button>
+                                <p class="mt-4">By logging in, you agree to<a
+                                        href="">Terms & Conditions</a>
+                                    and<a href=" ">Privacy Policy</a> of moneycontrol
+                                </p>
+                                <p class="mt-4">
+                                    Don’t have an account? <a href="./signup.html"><strong>Sign
+                                            Up</strong></a>
+                                </p>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal ends-->
+
+
     <header class="h-25 p-0  bgcolor headerstickey">
         <!-- Nav bar -->
         <nav class="navbar navbar-expand-lg  d-flex justify-content-evenly align-items-start h-75 align-items-center">
@@ -32,20 +85,9 @@
             <div class="collapse navbar-collapse p-2 flex-grow-0" id="nav">
 
                 <ul class="navbar-nav ms-lg-5 navbarc nav-pills nav-fill me-5 fw-bold fs-6">
-                    <li class="nav-item"><a class=" nav-link active fw-bold  ms-lg-5 gold " href="">Home</a></li>
+                    <li class="nav-item"><a class=" nav-link  fw-bold  ms-lg-5 gold " href="">Home</a></li>
                     <li class="nav-item"><a class="nav-link  ms-lg-5 navbarf" href="./about.html">About</a></li>
                     <li class="nav-item"><a class="nav-link  ms-lg-5 navbarf" href="./menu.html">Menu</a></li>
-                    <li class="nav-item dropdown"><a id="dl" class="nav-link  ms-lg-5 fw-bold dropdown-toggle gold"
-                            data-bs-toggle="dropdown" href="">Locations</a>
-
-                        <ul class="dropdown-menu dropdown-center dropdown-menu-end" aria-labelledby="dl">
-                            <li><a class="dropdown-item d-flex justify-content-center" href="">Sharja</a></li>
-                            <li><a class="dropdown-item d-flex justify-content-center" href="">Dubai</a></li>
-                            <li><a class="dropdown-item d-flex justify-content-center" href="">Ajman</a></li>
-
-                        </ul>
-
-                    </li>
                     <li class="nav-item"><a class="nav-link  ms-lg-5 navbarf" href="./contact.html">Contact</a></li>
                     <li class="nav-item"><span id="login" data-bs-toggle="modal" data-bs-target="#exampleModal"
                             class=" curser nav-link  ms-lg-5 me-lg-5 navbarf" href="">Login</span></li>
