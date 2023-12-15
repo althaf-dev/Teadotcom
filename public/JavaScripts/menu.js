@@ -2,7 +2,10 @@ $(document).ready(() => {
 
     var carouselWidth = $(".carousel-inner")[0].scrollWidth;
     var cardWidth = $(".carousel-item")[0].scrollWidth;
+    console.log(`carouselWidth=${carouselWidth}`);
+    console.log(`cardwidth = ${cardWidth}`);
     let position = 0;
+
     $(".cartsummary").hide();
     $(".form-check-input").click(() => {
         if ($(".form-check-input").val() == "on") {
@@ -10,10 +13,14 @@ $(document).ready(() => {
             $(".nonveg").toggle();
         }
     })
+
+
     let item = 0;
     let cartPrice = 0;
     cart_items=[];
-    localStorage.setItem("items",JSON.stringify(cart_items));
+
+    // localStorage.setItem("items",JSON.stringify(cart_items));
+
     $(".card button").click((event) => {
 
         console.log("hi iam from menu")
@@ -31,9 +38,10 @@ $(document).ready(() => {
     })
 
     $(".carousel-control-next").click(() => {
+
         if (position < (carouselWidth - (4 * cardWidth))) {
             position += cardWidth;
-            $(".carousel-inner").animate({ scrollLeft: position }, 500);
+            $(".carousel-inner").animate({ scrollLeft: position }, 1000);
 
         }})
 
@@ -42,7 +50,7 @@ $(document).ready(() => {
         if (position > 0) {
             console.log(position);
             position -= cardWidth;
-            $(".carousel-inner").animate({ scrollLeft: position }, 500);
+            $(".carousel-inner").animate({ scrollLeft: position }, 1000);
         }
     })
 })

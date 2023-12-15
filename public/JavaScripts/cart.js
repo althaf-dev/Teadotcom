@@ -1,7 +1,7 @@
-
-
 let item = JSON.parse(localStorage.getItem("items"));
+
 let sum = 0;
+
 item.forEach(element => {
     $("#cart_items").append(`<div class=" row mt-2 p-1 m-0"><div class="col-4">
     ${element.item_name}
@@ -24,20 +24,18 @@ $(".min").click((event) => {
     const child = parent.children[1];
     let qty1 = Number($(child).text());
     price = Number($(parent_price).html());
-   
+
 
     if (qty1 > 0) {
-       
 
-        sum -= (price/qty1);
+
+        sum -= (price / qty1);
         price -= price / qty1;
         $(parent_price).html(price);
-        
         qty1--;
         $(child).html(qty1);
-        
         $(".total").html(sum);
-        console.log("iam here")
+
     }
     if (qty1 == 0) {
         $(event.target.parentElement.parentElement.parentElement.parentElement).remove();
@@ -56,7 +54,7 @@ $(".plus").click((event) => {
     qty1++;
     console.log(qty1);
     $(parent).html(qty1);
-    sum += (price/qty1);
+    sum += (price / qty1);
     $(".total").html(sum);
 
 
