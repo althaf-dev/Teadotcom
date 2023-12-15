@@ -18,7 +18,6 @@ item.forEach(element => {
 $(".total").html(sum);
 $(".min").click((event) => {
 
-    event.stopPropagation();
     const parent = event.target.parentElement;
     const parent_price = event.target.parentElement.parentElement.parentElement.parentElement.children[2];
     const child = parent.children[1];
@@ -43,8 +42,7 @@ $(".min").click((event) => {
 })
 
 $(".plus").click((event) => {
-
-    event.stopPropagation();
+    
     const parent = event.target.parentElement.children[1];
     const parent_price = event.target.parentElement.parentElement.parentElement.parentElement.children[2];
     price = Number($(parent_price).html());

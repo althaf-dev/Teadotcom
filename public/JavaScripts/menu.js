@@ -22,8 +22,6 @@ $(document).ready(() => {
     // localStorage.setItem("items",JSON.stringify(cart_items));
 
     $(".card button").click((event) => {
-
-        console.log("hi iam from menu")
         const button = event.currentTarget;
         $(".cartsummary").show();
 
